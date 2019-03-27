@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class Main {
-    static String GOOGLE_API_KEY = "AIzaSyBg94ryLIAnBLhQuenwQB4ib9rmrI_RWpk";
+    static String GOOGLE_API_KEY = "DO_NOT_STEAL_MY_KEY";
 
     static String containerLocation = "/Users/mathew/Documents/GitHub/GeoTraceRoute/CW2 Russell Tarcert/src/com/company/russelCapture.trc";
 
