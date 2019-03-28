@@ -101,6 +101,17 @@ public class Hop extends MasterLookupInfo implements Serializable {
         else{
             app+="No lookup data";
         }
+
+        app+= " or ";
+
+         info = getWhoIsAPIData();
+
+        if(info !=null){
+            app+=info.latitude+", "+info.longitude;
+        }
+        else{
+            app+="No lookup data";
+        }
         return app;
     }
 }
