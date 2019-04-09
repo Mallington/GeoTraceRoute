@@ -14,11 +14,16 @@ public class Main {
 
         TraceRouteContainer traceRoutes = loadCapture(containerLocation);
 
-        System.out.println(traceRoutes);
+        String app = "";
+        int n =1;
+        for(TraceRoute r :traceRoutes) {
+            //app+= LatexUtils.createSectionTitle("Trace Route Dump"+(n++))+"\n";
+            app+=LatexUtils.createGPSCoordinatesTable(r)+"\n";
+        }
 
-        System.out.println(ObjectConverter.getSerialVersionID(traceRoutes));
+        System.out.println(app);
 
-        //newCapture(containerLocation);
+
 
     }
 
